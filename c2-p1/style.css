@@ -1,31 +1,87 @@
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
 }
 
-header, footer {
-    background-color: lightcoral;
-    color: white;
+.container {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    width: 380px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+h1 {
+    color: #243b55;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.box label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.box input {
+    width: 100%;
     padding: 10px;
-    text-align: center;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    outline: none;
+    transition: 0.3s;
 }
 
-main {
-    padding: 20px;
-    text-align: center;
-    background-color: lightblue;
+.box input:focus {
+    border-color: #243b55;
+    box-shadow: 0 0 6px rgba(36,59,85,0.5);
 }
 
 button {
-    padding: 10px;
-    background-color: lightgreen;
+    margin-top: 18px;
+    width: 100%;
+    padding: 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #141e30, #243b55);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-#randomNumber {
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #243b55, #141e30);
+}
+
+.result {
+    margin-top: 25px;
+    padding: 15px;
+    background: #f2f6ff;
+    border-radius: 12px;
+}
+
+.result span {
     font-weight: bold;
-    margin: 20px;
+    color: #555;
+}
+
+#output {
+    margin-top: 10px;
+    font-size: 36px;
+    color: #c0392b;
 }
