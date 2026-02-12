@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Async User Data Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Live User Directory</h1>
+    <p>Fetching data using Async/Await</p>
+</header>
+
+<main>
+    <div id="loading" class="loader">
+        🔄 Please wait... Loading user data
+    </div>
+
+    <div class="table-container">
+        <table id="data">
+            <thead>
+                <tr>
+                    <th>User ID</th>
+                    <th>Full Name</th>
+                    <th>Email Address</th>
+                </tr>
+            </thead>
+            <tbody id="dataBody">
+                <!-- Data will be added dynamically -->
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Async Data Viewer | Web Technologies Lab</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

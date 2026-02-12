@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    min-height: 100vh;
+}
+
+header {
+    background: #111;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.tool-box {
+    background: #ffffff;
+    width: 600px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+textarea, input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.buttons {
+    text-align: center;
+    margin: 15px 0;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.btn-search {
+    background: #2196f3;
+}
+
+.btn-replace {
+    background: #ff9800;
+}
+
+.btn-format {
+    background: #4caf50;
+}
+
+.result-box {
+    margin-top: 15px;
+}
+
+.result-box h2 {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+footer {
+    background: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 12px;
+}

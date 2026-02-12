@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced RegEx Text Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Advanced RegEx Text Tool</h1>
+    <p>Smart Text Search, Replace & Format</p>
+</header>
+
+<main>
+    <div class="tool-box">
+
+        <label>Enter Text:</label>
+        <textarea id="inputText" rows="8" placeholder="Type or paste your text here..."></textarea>
+
+        <div class="controls">
+            <input type="text" id="searchText" placeholder="Search pattern">
+            <input type="text" id="replaceText" placeholder="Replace with">
+        </div>
+
+        <div class="buttons">
+            <button class="btn-search" onclick="performSearch()">Search</button>
+            <button class="btn-replace" onclick="performReplace()">Replace</button>
+            <button class="btn-format" onclick="performFormat()">Format</button>
+        </div>
+
+        <div class="result-box">
+            <h2>Output</h2>
+            <textarea id="outputText" rows="8" placeholder="Result will appear here..." readonly></textarea>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 RegEx Text Utility | Redesigned UI</p>
+</footer>
+
+</body>
+</html>
